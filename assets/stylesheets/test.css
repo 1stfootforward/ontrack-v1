@@ -1,0 +1,120 @@
+.contractor-item {
+  background-color: pink;
+}
+
+.task-item {
+  background-color: white;
+}
+
+.level-0 .contractor-item,
+.level-1 .task-item,
+.level-2 .detail-item
+{
+  display:none;
+}
+
+.hide {
+  display: none;
+}
+
+
+.shrink .task-item {
+  display:none;
+}
+
+.gantt-chart {
+  height:350px;
+  border: black 1px solid;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.header { vertical-align: center;}
+
+.example { width:100%; }
+
+.bump {
+  margin-top: 75px;
+}
+
+.table-header {
+  padding 10px;
+}
+
+.small-btn {
+  margin-bottom: -20px!important;
+  z-index: 99;
+  color: white!important;
+}
+
+
+
+.purple .small-btn .material-icon i  {
+  color: white!important;
+}
+
+.small-btn .material-icon i ::selection {
+  color: white!important;
+}
+
+.white {
+  color: white!important;
+}
+
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
+}
+
+/* Semantic*/
+
+.logo img{
+  height: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.item .icon {
+  font-size: 22px;
+}
+
+.pad {
+  padding: 20px!important;
+}
+
+td {
+  padding: 8px!important;
+  height: 35px!important;
+}
+
+.wrapper {
+  width:100%;
+}
+
+.right {
+  position: relative;
+  text-align: right!important;
+  right: 0;
+}
+
+.list-content {
+  min-height: 50px!important;
+  padding-top: 15px!important;
+  padding-bottom: 15px!important;
+}
+
+.bump {
+  margin-top: 25px!important;
+}
+
+
+
+
+
+
+
+
+
+
+

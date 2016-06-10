@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>Unsemantic CSS Framework</title>
+<!--[if lt IE 9]>
+  <script src="./assets/javascripts/html5.js"></script>
+<![endif]-->
+<!--[if (gt IE 8) | (IEMobile)]><!-->
+  <link rel="stylesheet" href="./assets/stylesheets/unsemantic-grid-responsive.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/sdl-styles.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/test.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-blue.min.css" />
+<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+<!--<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+  <link rel="stylesheet" href="./assets/stylesheets/ie.css" />
+<![endif]-->
+</head>
+<body >
+
+<!-- Uses a header that contracts as the page scrolls down. -->
+
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base" data-gr-c-s-loaded="true">
+    <div class="mdl-layout__container has-scrolling-header"><div class="mdl-layout mdl-js-layout mdl-layout--fixed-header has-tabs is-upgraded" data-upgraded=",MaterialLayout">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+
+        <div class="mdl-layout--large-screen-only ">
+           <a class="logo">
+            <img src="assets/logo.png">
+          </a>
+        </div>
+
+        <div class="mdl-layout__tab-bar-container"><div class="mdl-layout__tab-bar-button mdl-layout__tab-bar-left-button"><i class="material-icons">chevron_left</i></div><div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-js-ripple-effect--ignore-events" data-upgraded=",MaterialRipple">
+          
+          <a href="#features" class="mdl-layout__tab">Customer<span class="mdl-layout__tab-ripple-container mdl-js-ripple-effect" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></a>
+          <a href="#features" class="mdl-layout__tab">Site<span class="mdl-layout__tab-ripple-container mdl-js-ripple-effect" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></a>
+          <a href="#features" class="mdl-layout__tab is-active">Job<span class="mdl-layout__tab-ripple-container mdl-js-ripple-effect" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></a>
+          <a href="#features" class="mdl-layout__tab">Details<span class="mdl-layout__tab-ripple-container mdl-js-ripple-effect" data-upgraded=",MaterialRipple"><span class="mdl-ripple"></span></span></a>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add" data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">reorder</i>
+            <span class="visuallyhidden">Reorder</span>
+          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+        </div><div class="mdl-layout__tab-bar-button mdl-layout__tab-bar-right-button"><i class="material-icons">chevron_right</i></div></div>
+      </header>
+      <main class="mdl-layout__content">
+           <div class="grid-80 push-10 bump">
+      <div class="mdl-shadow--3dp">
+        <div class="">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>12 Twelve Street</h5>
+                   O J |    1  Active Job(s)  |  Pending Tasks (1) 
+                   <div class="bump">
+                      <button  type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">View Site</button>
+                      <button  type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Notify Site</button>
+                   </div>
+                </div>
+                
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Customer Ltd</h5>
+                  O J |    1  Active Job(s)  |  Pending Tasks (1)
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>#4596</h5>
+                  No pending tasks (1) | PM: Oli James | 027 323 2325 | oli@olijames.co.nz
+                  <div class="bump">
+                    <button id="show-modal-example" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Project Task</button>
+                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Quotation</button>
+                  </div>
+                </div>
+              </div>
+              <div class="bump mdl-card__actions">
+                <button type="button" class="right mdl-button mdl-js-button mdl-button--raised ">Sign In</button>
+              </div>
+            </div>
+      </div>
+    </div>
+    
+
+<div class="grid-100 mobile-grid-10 bump">
+  <div class="grid-100 mobile-grid-100 ">
+    <table onclick="expand('zero')" class="purple mdl-data-table mdl-shadow--3dp grid-100 mobile-grid-100">
+
+          <tr class="mdl-color--primary-dark">
+            <th class="mdl-data-table__cell--non-numeric white">Electracraft LTD - Electrician</th>
+            <th>
+              
+            </th>
+            <th>
+              <button class="small-btn mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--mini-fab mdl-button--accent">
+                <i class="material-icons">add</i>
+              </button>
+              <button class="small-btn mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--mini-fab mdl-button--accent">
+                <i class="material-icons">supervisor_account</i>
+              </button>
+              <button class="small-btn mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--mini-fab mdl-button--accent">
+                <i class="material-icons">playlist_add</i>
+              </button>
+            </th>
+          </tr>
+
+    </table>
+  </div>
+  <div class="grid-100 mobile-grid-100 ">
+    <table id="zero" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp grid-100">
+      <thead>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric">Tasks</th>
+          <th class="mdl-data-table__cell--non-numeric">
+              <i class="material-icons">done</i>
+              <i class="material-icons">done_all</i>
+              <i class="material-icons">event</i>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Task Name</td>
+          <td>Task Desctiption</td>
+          <td>12-8</td>
+          <td>16-8th</td>
+          <td>
+                <i class="material-icons">event</i>
+                <i class="material-icons">note_add</i>
+                <i class="material-icons">mode_edit</i>
+          </td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Task Name</td>
+          <td>Task Desctiption</td>
+          <td>12</td>
+          <td>2</td>
+          <td>
+            <i class="material-icons">event</i>
+                <i class="material-icons">note_add</i>
+                <i class="material-icons">mode_edit</i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="mdl-data-table mdl-data-table--selectable mdl-shadow--1dp grid-100">
+              <thead>
+                <tbody>
+                  <tr>
+                    <td>Labour</td>
+                    <td></td>
+                    <td>
+                          <i class="material-icons">mode_edit</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Materials</td>
+                    <td></td>
+                    <td>
+                          <i class="material-icons">mode_edit</i>
+                    </td>
+                  </tr>
+                </tbody>
+              </thread>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Task Name</td>
+          <td>Task Desctiption</td>
+          <td>12</td>
+          <td>5</td>
+          <td><i class="material-icons">event</i>
+                <i class="material-icons">note_add</i>
+                <i class="material-icons">mode_edit</i></td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Task Name</td>
+          <td>Task Desctiption</td>
+          <td>12</td>
+          <td>10</td>
+          <td>
+            <i class="material-icons">event</i>
+                <i class="material-icons">note_add</i>
+                <i class="material-icons">mode_edit</i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table onclick="expand('first')" class="bump purple mdl-data-table mdl-shadow--3dp grid-100 mobile-grid-100">
+
+          <tr class="mdl-color--primary-dark">
+            <th class="mdl-data-table__cell--non-numeric white">Electracraft LTD - Data Installer</th>
+            <th>
+              
+            </th>
+            <th>
+              
+            </th>
+          </tr>
+
+    </table>
+  </div>
+  <div class="grid-100 mobile-grid-100 ">
+    <table id="first" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp grid-100">
+      <thead>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric">Tasks</th>
+          <th class="mdl-data-table__cell--non-numeric">
+              <i class="material-icons">done</i>
+              <i class="material-icons">done_all</i>
+              <i class="material-icons">event</i>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Task Name</td>
+          <td>25</td>
+          <td>
+                <i class="material-icons">event</i>
+                <i class="material-icons">note_add</i>
+                <i class="material-icons">mode_edit</i>
+          </td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Task Name</td>
+          <td>2</td>
+          <td>
+            <i class="material-icons">event</i>
+                <i class="material-icons">note_add</i>
+                <i class="material-icons">mode_edit</i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="mdl-data-table mdl-data-table--selectable mdl-shadow--1dp grid-100">
+              <thead>
+                <tbody>
+                  <tr>
+                    <td>Labour</td>
+                    <td></td>
+                    <td>
+                          <i class="material-icons">mode_edit</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Materials</td>
+                    <td></td>
+                    <td>
+                          <i class="material-icons">mode_edit</i>
+                    </td>
+                  </tr>
+                </tbody>
+              </thread>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Task Name</td>
+          <td>5</td>
+          <td><i class="material-icons">event</i>
+                <i class="material-icons">note_add</i>
+                <i class="material-icons">mode_edit</i></td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Task Name</td>
+          <td>10</td>
+          <td>
+            <i class="material-icons">event</i>
+                <i class="material-icons">note_add</i>
+                <i class="material-icons">mode_edit</i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+<div class="grid-100 mobile-grid-100 ">
+    <table class="purple mdl-data-table mdl-shadow--3dp grid-100 mobile-grid-100">
+
+          <tr class="purple">
+            <th onclick="expand('first')" class="mdl-data-table__cell--non-numeric">Material</th>
+            <th>
+              
+            </th>
+            <th>
+              
+            </th>
+          </tr>
+
+    </table>
+  </div>
+  
+</div>
+</div>
+      </main>
+    </div></div>
+
+  
+
+<dialog class="mdl-dialog" id="modal-example">
+    <div class="mdl-dialog__content">
+        <h3>Project Task
+        </h3>
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Customer</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Task Name</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Description</label>
+          </div>
+        </form>
+    </div>
+    <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+        <button type="button" class="mdl-button">Close</button>
+        <button type="button" class="mdl-button" disabled>Preview</button>
+    </div>
+</dialog>
+
+
+
+
+   
+
+    
+
+  <script src="./assets/javascripts/jquery.js"></script>
+  <script src="./assets/javascripts/demo.js"></script>
+<script>
+  (function() {
+        'use strict';
+        var dialog = document.querySelector('#modal-example');
+        var closeButton = dialog.querySelector('button');
+        var showButton = document.querySelector('#show-modal-example');
+        if (! dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+        }
+        var closeClickHandler = function(event) {
+            dialog.close();
+        };
+        var showClickHandler = function(event) {
+            dialog.showModal();
+        };
+        showButton.addEventListener('click', showClickHandler);
+        closeButton.addEventListener('click', closeClickHandler);
+    }());
+  </script>
+</body>
+</html>

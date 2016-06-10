@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>Unsemantic CSS Framework</title>
+<!--[if lt IE 9]>
+  <script src="./assets/javascripts/html5.js"></script>
+<![endif]-->
+<!--[if (gt IE 8) | (IEMobile)]><!-->
+  <link rel="stylesheet" href="./assets/stylesheets/unsemantic-grid-responsive.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/test.css" />
+<!--<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+  <link rel="stylesheet" href="./assets/stylesheets/ie.css" />
+<![endif]-->
+</head>
+<body>
+  
+    
+<!-- Header Section -->
+    <div class="grid-100 mobile-grid-100 header">
+      
+        
+        <div class="grid-20 mobile-grid-20"> 
+          <h1>
+            Logo
+          </h1> 
+        </div>
+        <div class="grid-40 mobile-grid-40"> . </div>
+        <div class="grid-40 mobile-grid-40 text-right">notifications | settings | logout&nbsp&nbsp </div>
+      
+    </div>
+
+<!-- Bread Crumbs -->
+
+    <div class="grid-100 mobile-grid-100">
+     
+        <div class="grid-50 ">
+          <h4>
+            Customer  |  Site  |  Job
+          </h4>
+        </div>
+        <div class="grid-50 text-right">
+        </div>
+        <hr />
+      
+    </div>
+<!-- Notifications -->
+
+<!-- Info Bar -->
+
+    <div class="grid-100 mobile-grid-100">
+     
+        <div class="grid-50 mobile-grid-50">
+          <h4 class="item-name">
+            Customer  |  Site  |  Job
+          </h4>
+        </div>
+        <div class="grid-50 mobile-grid-50 text-right">
+          <h1>
+            +  |  e  |  v
+          </h1>
+        </div>
+        <hr />
+      
+    </div>
+
+
+<!-- List Section -->
+
+<!-- Job Section -->
+
+<div id="job" class="screen hide">
+    <div class="grid-50 mobile-grid-100">
+      <section class="example-block">
+        <div class="grid-100">
+          <b class="grid-80" onclick="expandLevel( 'contractors',0)">
+            List of Contractors
+          </b>
+          <i class="grid-20 text-right">+</i>
+          <div id="contractors" class="contractor-list">
+            <!-- TASK ITEM TEMPLATE
+                  <div class="task-item grid-100">
+                    <div class="task-expand grid-10 mobile-grid-10" >e</div>
+                    <div class="task-name grid-70 mobile-grid-70" >Task Name</div>
+                    <div class="task-check grid-10 mobile-grid-10" >t</div>
+                    <div class="task-add grid-10 mobile-grid-10" >+</div>
+
+                  </div> 
+            -->
+
+          </div>
+        </div>
+
+        
+        <div class="job-contacts-list">
+          <div class="grid-100">
+            <b class="grid-80">
+              Job Contacts
+            </b>
+            <i class="grid-20 text-right">+</i>
+          </div>
+        </div>
+       
+
+        
+        <div class="\group-files-list">
+          <div class="grid-100">
+            <b class="grid-80">
+              Group Files
+            </b>
+            <i class="grid-20 text-right">+</i>
+          </div>
+
+        </div>
+        <div class="health-safety-list">
+          <div class="grid-100">
+            <b class="grid-80">
+              Health & Safety
+            </b>
+            <i class="grid-20 text-right">+</i>
+          </div>
+
+        </div>
+        <div class="other-trades-list">
+          <div class="grid-100">
+            <b class="grid-80">
+              Other Trades
+            </b>
+            <i class="grid-20 text-right">+</i>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    <div class="grid-50 mobile-grid-100">
+      <section class="example-block">
+        <b >
+          Chart View
+        </b>
+        <div class="gantt-chart">
+        </div>
+      </section>
+    </div>
+</div>
+
+<!-- Contractor Section -->
+
+<div id="contractor" class="screen hide">
+    <section class="example-block grid-50 mobile-grid-100">
+        <div class="grid-100 ">
+          <b class="grid-80" onclick="expandLevel( 'contractors',0)">
+            List
+          </b>
+          <i class="grid-20 text-right">+</i>
+          <div id="tasks" class="task-list">
+
+
+          </div>
+        </div>
+
+        
+        <div class="job-contacts-list">
+          <div class="grid-100">
+            <b class="grid-80">
+              Job Contacts
+            </b>
+            <i class="grid-20 text-right">+</i>
+          </div>
+        </div>
+       
+
+        
+        <div class="\group-files-list">
+          <div class="grid-100">
+            <b class="grid-80">
+              Group Files
+            </b>
+            <i class="grid-20 text-right">+</i>
+          </div>
+
+        </div>
+        <div class="health-safety-list">
+          <div class="grid-100">
+            <b class="grid-80">
+              Health & Safety
+            </b>
+            <i class="grid-20 text-right">+</i>
+          </div>
+
+        </div>
+        <div class="other-trades-list">
+          <div class="grid-100">
+            <b class="grid-80">
+              Other Trades
+            </b>
+            <i class="grid-20 text-right">+</i>
+          </div>
+
+        </div>
+      </section>
+      <div class="grid-50 mobile-grid-100">
+      
+        <b >
+          Chart View
+        </b>
+        <div class="gantt-chart">
+        </div>
+      
+      </div>
+  </section>
+</div>
+
+<!-- Task Section -->
+
+<div id="task" class="screen hide">
+  <section class="example-block grid-50 mobile-grid-100">
+    <h5>Task Description</h5>
+  </section>
+  <section class="example-block grid-50 mobile-grid-100">
+    <h5>Task Details List</h5>
+  </section>
+
+</div>
+
+    
+
+  <script src="./assets/javascripts/jquery.js"></script>
+  <script src="./assets/javascripts/demo.js"></script>
+</body>
+</html>
