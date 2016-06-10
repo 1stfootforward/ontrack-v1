@@ -62,6 +62,14 @@ function fireContractor(id) {
     screenPicker("contractor");
 }
 
+$(document).ready(function() {
+
+    var width = $( document ).width() 
+    if( width < 900 ) {
+      $("#comp").addClass('hide');
+    }
+  });
+
 
 function fireTask(id) {
 
